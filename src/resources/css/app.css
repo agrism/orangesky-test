@@ -1,0 +1,174 @@
+.itemScreen {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.itemHistory {
+    grid-area: right;
+}
+
+.itemBottom {
+    grid-area: bottom;
+}
+
+.btnDot {
+    grid-area: btnDot;
+}
+
+.btn0 {
+    grid-area: btn0;
+}
+
+.btn1 {
+    grid-area: btn1;
+}
+
+.btn2 {
+    grid-area: btn2;
+}
+
+.btn3 {
+    grid-area: btn3;
+}
+
+.btn4 {
+    grid-area: btn4;
+}
+
+.btn5 {
+    grid-area: btn5;
+}
+
+.btn6 {
+    grid-area: btn6;
+}
+
+.btn7 {
+    grid-area: btn7;
+}
+
+.btn8 {
+    grid-area: btn8;
+}
+
+.btn9 {
+    grid-area: btn9;
+}
+
+.btnDiv {
+    grid-area: btnDiv;
+}
+
+.btnMul {
+    grid-area: btnMul;
+}
+
+.btnSub {
+    grid-area: btnSub;
+}
+
+.btnSum {
+    grid-area: btnSum;
+}
+
+.btnCalc {
+    grid-area: btnCalc;
+}
+
+.btnClear {
+    grid-area: btnClear;
+}
+
+.btnBackSpace {
+    grid-area: btnBackSpace;
+}
+
+.grid-container {
+    width: 600px;
+    margin: 20px;
+    display: grid;
+    grid-template-areas:
+    'header header header header right right'
+    'menu menu menu menu right right'
+    'menu menu menu menu bottom bottom';
+    gap: 10px;
+    background-color: rgba(213, 212, 212, 0.44);
+    padding: 10px;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+}
+
+.grid-container > div {
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    border-radius: 4px;
+}
+
+.grid-buttons-container {
+    margin: 0px;
+    display: grid;
+    grid-template-areas:
+    'btnClear btnClear btnBackSpace btnDiv'
+    'btn7 btn8 btn9 btnMul'
+    'btn4 btn5 btn6 btnSub'
+    'btn1 btn2 btn3 btnSum'
+    'btn0 btn0 btnDot btnCalc';
+    /*'btnCalc1 btnCalc1 btnCalc1 btnCalc';*/
+    gap: 10px;
+    /*background-color: #2196F3;*/
+    padding: 0px;
+}
+
+.grid-buttons-container > button {
+    background-color: rgba(3, 176, 119, 0.98);
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.black-line {
+    border: 1px solid black;
+}
+
+.itemHistory > div {
+    /*font-size: 1.1rem;*/
+    /*border: 1px solid green;*/
+    margin: 5px;
+    min-width: 200px;
+}
+
+.h60 {
+    height: 60px;
+}
+
+.hideOverFlow {
+    overflow: hidden;
+}
+
+.grid-container > .itemScreen {
+    min-width: 200px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.grid-container > .itemHistory {
+    min-width: 290px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.grid-container > .itemBottom {
+    overflow: hidden;
+    color: red;
+}
+
+.error {
+    color: red;
+}

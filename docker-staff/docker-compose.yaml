@@ -1,0 +1,23 @@
+version: '3'
+services:
+ lemp:
+  build: .
+  container_name: 'lemp'
+  privileged: true
+  environment:
+   - MYSQL_DATABASE=${DB_DATABASE}
+   - MYSQL_USER_NAME=${DB_USERNAME}
+   - MYSQL_USER_PASSWORD=${DB_PASSWORD}
+   - COMPOSER_INSTALL=true
+   - RUN_MIGRATION=true
+   - RUN_NPM=true
+   - RUN_PHP_FPM=true
+   - RUN_NGINX=true
+   - RUN_MYSQL=true
+   - APP_LOG_DIR="/var/log/app"
+  ports:
+  - "8080:80"
+  volumes:
+  - ./../src:/var/www
+  - ./nginx/nginx.conf:/etc/nginx/sites-available/default
+  restart: always
