@@ -64,3 +64,6 @@ For example, there is specified data storage resolver in `.env` file:
 # available options: sql, file, fake, 
 RESOLVER_DATASTORE=sql
 ```
+
+### Demo
+Link: <a href="https://orange-sky.kilograms.lv" target="_blank">orange-sky.kilograms.lv</a>
